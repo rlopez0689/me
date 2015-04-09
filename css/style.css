@@ -28,10 +28,23 @@ html, body{
     background-position-y:25%;
     background-position-x:35%;
     margin:0 auto;
+    opacity:0.8;
 }
 
-.categorie{
-    text-align: center;
+.education{
+    opacity:0.7;
+}
+
+.education:hover{
+    opacity:1;
+}
+
+.row_top{
+    margin-top: 20px;
+}
+
+.borders{
+    margin-left: 15px;
 }
 
 /* Override navbar */
