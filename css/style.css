@@ -13,6 +13,18 @@ html, body{
     background-size: 100% 100%;
 }
 
+.ped{
+    background-image: url("../images/personal_stuff.jpg");
+}
+
+.code{
+    background-image: url("../images/code.jpg");
+}
+
+.code_text{
+    text-align: center;
+}
+
 .profile{
     color:white;
     text-align: center;
@@ -45,6 +57,10 @@ html, body{
 
 .borders{
     margin-left: 15px;
+}
+
+.white{
+    color:white;
 }
 
 /* Override navbar */
