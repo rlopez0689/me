@@ -37,33 +37,37 @@ html, body{
 }
 
 .circle-image{
-    width:200px;
+    width:auto;
+    max-width: 200px;
     height:200px;
     border-radius:50%;
     background-image:url("../images/me.jpg");
     display:block;
     background-position-y:25%;
-    background-position-x:35%;
+    background-position-x:45%;
     margin:0 auto;
     opacity:0.8;
 }
 
+.education_container{
+    margin-bottom: 10px;
+}
+
 .education{
-    opacity:0.7;
+    opacity:0.9;
 }
 
 .education:hover{
     opacity:1;
 }
 
+.education_div{
+    margin-top: 15%;
+}
+
 .row_top{
     margin-top: 20px;
 }
-
-.borders{
-    margin-left: 15px;
-}
-
 .white{
     color:white;
 }
@@ -72,4 +76,14 @@ html, body{
 
 .navbar{
     margin-bottom: 0;
+}
+
+.edu{
+    border-radius: 25px;
+    border: 2px solid #e7e7e7;
+    margin-bottom: 10px;
+}
+
+.responsive_img_code{
+    max-width: 100px !important;
 }

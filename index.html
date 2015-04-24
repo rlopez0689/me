@@ -24,8 +24,8 @@
             <div class="collapse navbar-collapse" id="nav-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About me</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Code</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
+                    <li><a href="#code"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Code</a></li>
+                    <li><a href="#education"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Hobbies</a></li>
                 </ul>
             </div>
@@ -33,86 +33,93 @@
     </nav>
     <div class="container-fluid presentation pre">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 profile">
+            <div class="col-xs-6 col-xs-offset-3 profile">
                 <div class="circle-image"></div>
                 <h1>Hi! My name is Rodrigo.</h1>
                 <p class="lead">Web Developer.</p>
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
-        <div class="education_div">
-            <div class="row">
-                <h2 class="borders">Education</h2>
-                <div class="col-xs-4 col-xs-offset-2 col-sm-5 col-sm-offset-2">
-                    <div class="row">
-                        <div class="col-sm-3 education">
-                            <img src="images/upm.jpg" class="img-responsive" alt="Responsive image">
+        <h2>Education</h2>
+        <a name="education"></a>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 education_container">
+                <div class="row">
+                    <div class="col-sm-5  edu">
+                        <div class="row education_div">
+                            <div class="col-xs-4 col-xs-offset-1 col-sm-3 col-sm-offset-1 education">
+                                <img src="images/upm.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-6 col-sm-8">
+                                <p>Master degree in web engineering</p>
+                                <p>Universidad Politecnica de Madrid</p>
+                                <p>July 2015</p>
+                            </div>
                         </div>
-                        <div class="hidden-xs col-sm-6">
-                            <p>Master degree in web engineering</p>
-                            <p>Universidad Politecnica de Madrid</p>
-                            <p>Julio 2015</p>
+                    </div>
+
+                    <div class="col-sm-5 col-sm-offset-2 edu">
+                        <div class="row education_div">
+                            <div class="col-xs-4 col-xs-offset-1 col-sm-3 col-sm-offset-1 education">
+                                <img src="images/itq.png" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-6 col-sm-8">
+                                <p>Degree in C. Systems engineering</p>
+                                <p>Instituto Tecnologico de Querétaro.</p>
+                                <p>September 2013</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-5">
-                    <div class="row">
-                        <div class="col-sm-3 education">
-                            <img src="images/itq.png" class="img-responsive" alt="Responsive image">
-                        </div>
-                        <div class="hidden-xs col-sm-6">
-                            <p>Degree in computational systems engineering</p>
-                            <p>Instituto Tecnologico de Querétaro</p>
-                            <p>Septiembre 2013</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row_top">
-                <div class="col-xs-4 col-xs-offset-2 col-sm-5 col-sm-offset-2">
-                    <div class="row">
-                        <div class="col-sm-3 education">
-                            <img src="images/nc.jpg" class="img-responsive" alt="Responsive image">
-                        </div>
-                        <div class="hidden-xs col-sm-4">
-                            <p>High-School</p>
-                            <p>Colegio Nuevo Continente</p>
-                            <p>Julio 2008</p>
+                <div class="row">
+                    <div class="col-sm-5 edu">
+                        <div class="row education_div">
+                            <div class="col-xs-4 col-xs-offset-1 col-sm-3 col-sm-offset-1 education">
+                                <img src="images/nc.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-6 col-sm-8">
+                                <p>High School</p>
+                                <p>New Continent School</p>
+                                <p>July 2018</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-5">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-3 education">
-                            <img src="images/fce.jpg" class="img-responsive" alt="Responsive image">
-                        </div>
-                        <div class="hidden-xs col-sm-6">
-                            <p>First Certificate B2</p>
-                            <p>University of Cambridge</p>
-                            <p>Septiembre 2007</p>
+                    <div class="col-sm-5 col-sm-offset-2 edu">
+                        <div class="row education_div">
+                            <div class="col-xs-4 col-xs-offset-1 col-sm-3 col-sm-offset-1 education">
+                                <img src="images/fce.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-xs-6 col-sm-8">
+                                <p>First Certificate B2</p>
+                                <p>University of Cambridge</p>
+                                <p>September 2007</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   </div>
+    </div>
+
     <div class="container-fluid coding_div presentation code">
+        <a name="code"></a>
         <h2 class="white">Code</h2>
         <div class="row">
-            <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
+            <div class="col-xs-6 col-xs-offset-3">
                 <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/languages/python.png" class="img-responsive" alt="Responsive image">
+                    <div class="col-xs-4 col-sm-2 col-sm-offset-2">
+                        <img src="images/languages/python.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/html5.png" class="img-responsive" alt="Responsive image">
+                    <div class=" col-xs-4 col-sm-2">
+                        <img src="images/languages/html5.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/php.png" class="img-responsive" alt="Responsive image">
+                    <div class=" col-xs-4 col-sm-2">
+                        <img src="images/languages/php.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/java.png" class="img-responsive" alt="Responsive image">
+                    <div class="hidden-xs col-sm-2">
+                        <img src="images/languages/java.png" class="img-responsive " alt="Responsive image">
                     </div>
                 </div>
                 <div class="row">
@@ -122,17 +129,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/languages/css.png" class="img-responsive" alt="Responsive image">
+                    <div class="col-xs-4 col-sm-2 col-sm-offset-2">
+                        <img src="images/languages/css.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/jquery.png" class="img-responsive" alt="Responsive image">
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="images/languages/jquery.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/knockout.png" class="img-responsive" alt="Responsive image">
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="images/languages/knockout.png" class="img-responsive " alt="Responsive image">
                     </div>
-                    <div class="col-xs-3">
-                        <img src="images/languages/js.png" class="img-responsive" alt="Responsive image">
+                    <div class="hidden-xs col-sm-2">
+                        <img src="images/languages/js.png" class="img-responsive " alt="Responsive image">
                     </div>
                 </div>
             </div>
