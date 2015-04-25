@@ -41,10 +41,8 @@ html, body{
     max-width: 200px;
     height:200px;
     border-radius:50%;
-    background-image:url("../images/me.jpg");
     display:block;
-    background-position-y:25%;
-    background-position-x:45%;
+    background: url("../images/me.jpg") 40% 45% no-repeat;
     margin:0 auto;
     opacity:0.8;
 }
@@ -62,7 +60,7 @@ html, body{
 }
 
 .education_div{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .row_top{
@@ -79,11 +77,17 @@ html, body{
 }
 
 .edu{
-    border-radius: 25px;
-    border: 2px solid #e7e7e7;
     margin-bottom: 10px;
 }
 
 .responsive_img_code{
     max-width: 100px !important;
+}
+
+.work_image{
+    height:100px;
+}
+
+.educational_image{
+    max-width: 50%;
 }
