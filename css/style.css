@@ -4,6 +4,19 @@ html, body{
     padding-top: 25px;
 }
 
+@font-face{ 
+    font-family: 'MyWebFont';
+    src: url('../fonts/3Dumb-webfont.eot') format('eot'),
+         url('../fonts/3Dumb-webfont.woff') format('woff'),
+         url('../fonts/3Dumb-webfont.ttf') format('truetype'),
+         url('../fonts/3Dumb-webfont.svg') format('svg');
+}
+
+.navbar-brand{
+    font-family: 'MyWebFont', Helvetica, sans-serif;
+    font-size: 32px;
+}
+
 .presentation{
     background-image: url("../images/personal_stuff.jpg");
     background-repeat: no-repeat;
@@ -13,13 +26,14 @@ html, body{
     background-size: 100% 100%;
 }
 
-.ped{
-    background-image: url("../images/personal_stuff.jpg");
-}
-
 .code{
     background-image: url("../images/code.jpg");
     padding-bottom: 1%;
+}
+
+.hobbie{
+    background-image: url("../images/hobbie.jpg");
+    color:white;
 }
 
 .code_text{
@@ -70,6 +84,10 @@ html, body{
     color:white;
 }
 
+.margin_code{
+    margin-bottom:27px;
+}
+
 /* Override navbar */
 
 .navbar{
@@ -90,4 +108,7 @@ html, body{
 
 .educational_image{
     max-width: 50%;
+}
+.contacts{
+    margin-left:15px;
 }
