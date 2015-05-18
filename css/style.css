@@ -58,7 +58,6 @@ html, body{
     display:block;
     background: url("../images/me.jpg") 40% 45% no-repeat;
     margin:0 auto;
-    opacity:0.8;
 }
 
 .education_container{
