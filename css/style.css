@@ -50,16 +50,6 @@ html, body{
     margin-top: 10px;
 }
 
-.circle-image{
-    width:auto;
-    max-width: 200px;
-    height:200px;
-    border-radius:50%;
-    display:block;
-    background: url("../images/me.jpg") 40% 45% no-repeat;
-    margin:0 auto;
-}
-
 .education_container{
     margin-bottom: 10px;
 }
