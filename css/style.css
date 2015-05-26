@@ -74,6 +74,10 @@ html, body{
 }
 
 .margin_code{
+    margin-top: 7px;
+}
+
+.margin_block{
     margin-bottom:27px;
 }
 
