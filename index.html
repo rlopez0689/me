@@ -8,8 +8,26 @@
           href="images/me.ico">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-1.10.2.js" rel="script"></script>
+    <script src="bootstrap/js/bootstrap.min.js" rel="script"></script>
+    <script src="js/pace.js"></script>
+    <script>
+        // Before bringing in pace.js
+        paceOptions = {
+          elements: {
+            selectors: ['img']
+          }
+        }
+        $(function() {
+            Pace.on("done", function(){
+
+                $(".content").fadeIn(1000);
+            });
+        });
+    </script>
 </head>
 <body>
+    <div class="content">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -205,8 +223,7 @@
             </div>
         </div>
     </footer>
-    <script src="bootstrap/js/jquery-1.10.2.js" rel="script"></script>
-    <script src="bootstrap/js/bootstrap.min.js" rel="script"></script>
+    </div>
 </body>
 </html>
 
