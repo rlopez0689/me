@@ -25,7 +25,8 @@
             Pace.on("done", function(){
 
                 $(".content").fadeIn(1000, function(){
-                    Pace.stop();
+                    $('.pace').remove();
+                    $(body).removeClass('  pace-done');
                 });
             });
         });
