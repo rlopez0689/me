@@ -22,14 +22,9 @@
                 selectors: ['img']
               }
             }
-            $(function() {
-                Pace.on("done", function(){
+            Pace.on("done", function(){
 
-                    $(".content").fadeIn(1000, function(){
-                        $('.pace').remove();
-                        $('body').removeClass('  pace-done');
-                    });
-                });
+                $(".content").fadeIn(1000);
             });
             $(function(){
                 $(".typed_title").typed({
