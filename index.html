@@ -14,28 +14,30 @@
     <script src="js/typed.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script>
-        smoothScroll.init();
-        // Before bringing in pace.js
-        paceOptions = {
-          elements: {
-            selectors: ['img']
-          }
-        }
-        $(function() {
-            Pace.on("done", function(){
+        $( document ).ready(function() {
+            smoothScroll.init();
+            // Before bringing in pace.js
+            paceOptions = {
+              elements: {
+                selectors: ['img']
+              }
+            }
+            $(function() {
+                Pace.on("done", function(){
 
-                $(".content").fadeIn(1000, function(){
-                    $('.pace').remove();
-                    $('body').removeClass('  pace-done');
+                    $(".content").fadeIn(1000, function(){
+                        $('.pace').remove();
+                        $('body').removeClass('  pace-done');
+                    });
+                });
+            });
+            $(function(){
+                $(".typed_title").typed({
+                    strings: ["Hello!^1000", "I'm Rodrigo^1000 and i'm a Web Developer."],
+                    typeSpeed: 0
                 });
             });
         });
-        $(function(){
-        $(".typed_title").typed({
-            strings: ["Hello!^1000", "I'm Rodrigo^1000 and i'm a Web Developer."],
-            typeSpeed: 0
-        });
-    });
     </script>
 </head>
 <body>
