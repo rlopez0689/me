@@ -11,7 +11,10 @@
     <script src="bootstrap/js/jquery-1.10.2.js" rel="script"></script>
     <script src="bootstrap/js/bootstrap.min.js" rel="script"></script>
     <script src="js/pace.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script>
+        smoothScroll.init();
         // Before bringing in pace.js
         paceOptions = {
           elements: {
@@ -24,6 +27,12 @@
                 $(".content").fadeIn(1000);
             });
         });
+        $(function(){
+        $(".typed_title").typed({
+            strings: ["Hello!^1000", "I'm Rodrigo^1000 and i'm a Web Developer."],
+            typeSpeed: 0
+        });
+    });
     </script>
 </head>
 <body>
@@ -41,28 +50,27 @@
             </div>
             <div class="collapse navbar-collapse" id="nav-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About me</a></li>
-                    <li><a href="#work"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Work</a></li>
-                    <li><a href="#code"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Code</a></li>
-                    <li><a href="#education"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
-                    <li><a href="#hobbies"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Hobbies</a></li>
+                    <li><a data-scroll href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About me</a></li>
+                    <li><a data-scroll href="#work"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Work</a></li>
+                    <li><a data-scroll href="#code"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Code</a></li>
+                    <li><a data-scroll href="#education"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
+                    <li><a data-scroll href="#hobbies"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Hobbies</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container-fluid presentation pre">
-        <a name="about"></a>
-        <div class="row">
+        <div id='about' class="row">
             <div class="col-xs-6 col-xs-offset-3 profile">
                 <div><img src="images/me.jpg" class="img-responsive img-circle center-block"></div>
-                <h1>Hi! My name is Rodrigo.</h1>
-                <p class="lead">Web Developer.</p>
+                <div class='typed_text_div'>
+                    <span class='typed_title'></span>
+                </div>    
             </div>
         </div>
     </div>
 
-    <a name="work"></a>
-    <div class="container-fluid">
+    <div id='work' class="container-fluid">
         <h2>Work</h2>
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
@@ -74,7 +82,7 @@
                 <div class="col-sm-4 text-center">
                     <img src="images/work/wime.png" class="img-responsive work_image center-block " alt="Responsive image">
                     <h4>Wime</h4>
-                    <p>Web Developer: 2014-</p>
+                    <p>Web Developer: 2013-</p>
                 </div>
                 <div class="col-sm-4 text-center">
                     <img src="images/work/github.png" class="img-responsive work_image center-block " alt="Responsive image">
@@ -87,8 +95,7 @@
         </div>
     </div>
 
-    <a name="code"></a>
-    <div class="container-fluid coding_div presentation code">
+    <div id='code' class="container-fluid coding_div presentation code">
         <h2 class="white">Code</h2>
         <div class="row">
             <div class="col-xs-6 col-xs-offset-3">
@@ -130,8 +137,7 @@
         </div>
     </div>
 
-    <a name="education"></a>
-    <div class="container-fluid">
+    <div id='education' class="container-fluid">
         <h2>Education</h2>
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 education_container">
@@ -184,8 +190,7 @@
         </div>
     </div>
 
-    <a name="hobbies"></a>
-    <div class="container-fluid presentation hobbie">
+    <div id='hobbies' class="container-fluid presentation hobbie">
         <h2>Hobbies</h2>
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
