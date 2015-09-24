@@ -20,12 +20,13 @@
           elements: {
             selectors: ['img']
           }
-          restartOnRequestAfter: false
         }
         $(function() {
             Pace.on("done", function(){
 
-                $(".content").fadeIn(1000);
+                $(".content").fadeIn(1000, function(){
+                    Pace.stop();
+                });
             });
         });
         $(function(){
