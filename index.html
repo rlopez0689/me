@@ -22,9 +22,11 @@
               restartOnRequestAfter: false,
               restartOnPushState: false
             }
+
             Pace.on("done", function(){
 
                 $(".content").fadeIn(1000, function(){
+                    $('.typed-cursor').remove();
                     paceOptions.startOnPageLoad=false;
                     $(".typed_title").typed({
                         strings: ["Hello!^1000", "I'm Rodrigo^1000 and i'm a Web Developer."],
@@ -65,6 +67,7 @@
                 <div><img src="images/me.jpg" class="img-responsive img-circle center-block"></div>
                 <div class='typed_text_div'>
                     <span class='typed_title'></span>
+                    <span class="typed-cursor">|</span>
                 </div>    
             </div>
         </div>
