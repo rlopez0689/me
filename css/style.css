@@ -10,7 +10,8 @@ html, body{
 
 .container_higher{
     position: relative;
-    height: 500px;
+    height: 450px;
+    max-height: 30%;
 }
 .child_higher{
     position: absolute;
