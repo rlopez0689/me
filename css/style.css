@@ -1,4 +1,4 @@
-ºhtml, body{
+html, body{
     height: 100%;
     min-height: 100%;
     padding-top: 25px;
@@ -251,4 +251,33 @@
 @keyframes pace-theme-center-atom-spin {
   0%   { transform: rotate(0deg) }
   100% { transform: rotate(359deg) }
+}
+
+.typed_title, .typed-cursor{
+  font-size: 24px;
+}
+.typed_text_div{
+   margin-top:10px;
+    margin-bottom:10px; 
+}
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
