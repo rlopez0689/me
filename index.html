@@ -37,7 +37,10 @@
             <div id="home" class="container-fluid presentation">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-8 col-sm-8 col-md-4 col-lg-3 text-center">
-                        <img src="images/me.jpg" class="img-fluid img-circle" />
+                        <picture>
+                            <source type="image/webp" srcset="images/me.webp" />
+                            <img src="images/me.jpg" class="img-fluid img-circle" alt="Profile Picture" />
+                        </picture>
                         <div class="typed_text_div">
                             <span class="typed_title"></span>
                             <span class="typed-cursor">|</span>
@@ -49,22 +52,42 @@
                 <h2>Work</h2>
                 <div class="row">
                     <div class="col-sm-6 col-lg-3 text-center item">
-                        <a target="_blank" href="https://www.digitalonus.com/"><img src="images/work/dou.png" class="img-responsive work_image center-block" alt="Responsive image"/></a>
+                        <a target="_blank" href="https://www.digitalonus.com/">
+                            <picture>
+                                <source type="image/webp" srcset="images/work/dou.webp" />
+                                <img src="images/work/dou.png" class="img-responsive work_image center-block" alt="Responsive image" />
+                            </picture>
+                        </a>
                         <h4>Digital OnUs</h4>
                         <p>Software engineer</p>
                     </div>
                     <div class="col-sm-6 col-lg-3 text-center item">
-                        <a target="_blank" href="https://www.accenture.com"><img src="images/work/acc.png" class="img-responsive work_image center-block " alt="Responsive image"/></a>
+                        <a target="_blank" href="https://www.accenture.com">
+                            <picture>
+                                <source type="image/webp" srcset="images/work/acc.webp" />
+                                <img src="images/work/acc.png" class="img-responsive work_image center-block " alt="Responsive image" />
+                            </picture>
+                        </a>
                         <h4>Accenture</h4>
                         <p>DevOps engineer</p>
                     </div>
                     <div class="col-sm-6 col-lg-3 text-center item">
-                        <a target="_blank" href="http://www.wimelabs.com"><img src="images/work/wime.jpg" class="img-responsive work_image center-block " alt="Responsive image"/></a>
+                        <a target="_blank" href="http://www.wimelabs.com">
+                            <picture>
+                                <source type="image/webp" srcset="images/work/wime.webp" />
+                                <img src="images/work/wime.jpg" class="img-responsive work_image center-block " alt="Responsive image" />
+                            </picture>
+                        </a>
                         <h4>Wime</h4>
                         <p>Web Developer: 2013-2015</p>
                     </div>
                     <div class="col-sm-6 col-lg-3 text-center item">
-                        <a target="_blank" href="https://github.com/rlopez0689"><img src="images/work/github.png" class="img-responsive work_image center-block " alt="Responsive image"/></a>
+                        <a target="_blank" href="https://github.com/rlopez0689">
+                            <picture>
+                                <source type="image/webp" srcset="images/work/github.webp" />
+                                <img src="images/work/github.png" class="img-responsive work_image center-block " alt="Responsive image" />
+                            </picture>
+                        </a>
                         <h4>Personal</h4>
                     </div>
                 </div>
@@ -73,27 +96,39 @@
                 <h2>Education</h2>
                 <div class="row">
                     <div class="col-sm-6 edu text-center item">
-                        <img src="images/education/upm.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        <picture>
+                            <source type="image/webp" srcset="images/education/upm.webp" />
+                            <img src="images/education/upm.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        </picture>
                         <h4>Master degree in web engineering</h4>
                         <p>Universidad Politecnica de Madrid</p>
                         <p>July 2015</p>
                     </div>
 
                     <div class="col-sm-6 edu text-center item">
-                        <img src="images/education/itq.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        <picture>
+                            <source type="image/webp" srcset="images/education/itq.webp" />
+                            <img src="images/education/itq.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        </picture>
                         <h4>Degree in C. Systems engineering</h4>
                         <p>Instituto Tecnologico de Querétaro.</p>
                         <p>September 2013</p>
                     </div>
 
                     <div class="col-sm-6 edu text-center item">
-                        <img src="images/education/nc.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        <picture>
+                            <source type="image/webp" srcset="images/education/nc.webp" />
+                            <img src="images/education/nc.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        </picture>
                         <h4>High School</h4>
                         <p>New Continent School</p>
                         <p>July 2008</p>
                     </div>
                     <div class="col-sm-6 edu text-center item">
-                        <img src="images/education/fce.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        <picture>
+                            <source type="image/webp" srcset="images/education/fce.webp" />
+                            <img src="images/education/fce.png" class="img-responsive educational_image center-block" alt="Responsive image" />
+                        </picture>
                         <h4>First Certificate B2</h4>
                         <p>University of Cambridge</p>
                         <p>September 2007</p>
@@ -144,5 +179,6 @@
         <script src="js/pace.js"></script>
         <script src="js/typed.js"></script>
         <script src="js/pacetype.min.js"></script>
+        <script src="js/modernizr-custom.js"></script>
     </body>
 </html>
