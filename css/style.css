@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'MyWebFont';
+    font-display: auto;
     src: url('../fonts/3Dumb-webfont.eot') format('eot'), url('../fonts/3Dumb-webfont.woff') format('woff'), url('../fonts/3Dumb-webfont.ttf') format('truetype'), url('../fonts/3Dumb-webfont.svg') format('svg');
 }
 
